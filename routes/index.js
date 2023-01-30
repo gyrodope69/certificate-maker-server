@@ -14,6 +14,8 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* FOR UPLOADING THE FILE */
+
 /* FOR DOWNLOAD OF THE CERTIFICATES WHICH STORE FILES IN SERVER */
 router.post('/downloads', (req, res) => {
   updateCanvas(req.body).then((buffer) => {
